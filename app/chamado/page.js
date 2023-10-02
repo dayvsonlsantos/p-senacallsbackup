@@ -7,7 +7,7 @@ export default function Chamado() {
 
     return (
         <div className="flex flex-col min-h-screen">
-            <div className="flex-grow">
+            <div className="flex-grow mb-28">
                 <Navbar />
                 <main className="flex items-center justify-center flex-col w-full ">
                     <h1 className="flex justify-start w-4/5 m-4 text-lg">Sobre o Chamado</h1>
@@ -26,13 +26,15 @@ export default function Chamado() {
                     <a href="/cancelarchamado" className="bg-red-600 text-white rounded-lg p-1">Cancelar</a>
                 </main>
             </div>
-            <footer className="w-1/3 flex items-center justify-evenly flex-row py-4">
-                <a href="/">
-                    <div className="w-12 h-12 flex items-center justify-center">
-                        <img className="h-7 w-7" src='/backIcon.svg' alt="Icone de seta, indicando voltar, na cor laranja" />
-                    </div>
-                </a>
-            </footer>
+            <section className="fixed bottom-0 bg-white flex w-full flex-col">
+                <footer className="w-1/3 flex items-center justify-evenly flex-row py-4">
+                    <a href="/">
+                        <div className="w-12 h-12 flex items-center justify-center">
+                            <img className="h-7 w-7" src='/backIcon.svg' alt="Icone de seta, indicando voltar, na cor laranja" />
+                        </div>
+                    </a>
+                </footer>
+            </section>
         </div>
     )
 }

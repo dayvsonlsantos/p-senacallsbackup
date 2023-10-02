@@ -1,6 +1,6 @@
 export default function Footer({ ...props }) {
     return (
-        <footer className="w-full flex items-center justify-evenly flex-row py-4">
+        <footer className="fixed bottom-0 bg-white w-full flex items-center justify-evenly flex-row py-4">
             <a href="/">
                 <div className="w-12 h-12 flex items-center justify-center">
                     <img className="h-7 w-7" src={props.homeIcon} alt="Icone de casa, indicando Home, na cor laranja" />

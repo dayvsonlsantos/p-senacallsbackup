@@ -22,7 +22,7 @@ export default function CancelarChamado() {
 
     return (
         <form onSubmit={sendData} className="flex flex-col min-h-screen">
-            <div className="flex-grow">
+            <div className="flex-grow mb-36">
                 <Navbar />
                 <main className="flex items-center justify-center flex-col w-full ">
                     <h1 className="flex justify-start w-4/5 m-4 text-lg">Sobre o Chamado</h1>
@@ -40,17 +40,19 @@ export default function CancelarChamado() {
                     </div>
                 </main>
             </div>
-            <span className="flex items-center justify-center text-sm py-4">Encerrar chamado ?</span>
-            <footer className="w-9/12 flex items-center justify-evenly flex-row py-4">
-                <a href="/">
-                    <div className="w-12 h-12 flex items-center justify-center">
-                        <img className="h-7 w-7" src='/backIcon.svg' alt="Icone de seta, indicando voltar, na cor laranja" />
-                    </div>
-                </a>
-                <button type="submit" className="bg-red-600 w-16 h-16 flex items-center justify-center rounded-full">
-                    <img className="h-7 w-7" src="/checkIcon.svg" alt="Icone de ok, indicando check, na cor branca" />
-                </button>
-            </footer>
+            <section className="fixed bottom-0 bg-white flex w-full flex-col">
+                <span className="flex items-center justify-center text-sm py-4">Encerrar chamado ?</span>
+                <footer className="w-9/12 flex items-center justify-evenly flex-row py-4">
+                    <a href="/">
+                        <div className="w-12 h-12 flex items-center justify-center">
+                            <img className="h-7 w-7" src='/backIcon.svg' alt="Icone de seta, indicando voltar, na cor laranja" />
+                        </div>
+                    </a>
+                    <button type="submit" className="bg-red-600 w-16 h-16 flex items-center justify-center rounded-full">
+                        <img className="h-7 w-7" src="/checkIcon.svg" alt="Icone de ok, indicando check, na cor branca" />
+                    </button>
+                </footer>
+            </section>
         </form>
     )
 }
